@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Política de Privacidade — Finanças Fácil</title>
+<style>
+  :root {
+    --bg: #FAF6EF;
+    --surface: #FFFFFF;
+    --text: #1C2530;
+    --text-secondary: #5B6773;
+    --primary: #14293D;
+    --accent: #B08D57;
+    --border: #E4DECF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    color: var(--primary);
+    margin: 0 0 8px;
+  }
+  .subtitle {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+  .draft-notice {
+    background: #FFF7E8;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 32px;
+    font-size: 0.92rem;
+    color: var(--text);
+  }
+  .draft-notice strong { color: var(--primary); }
+  h2 {
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin-top: 40px;
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+  }
+  h3 {
+    font-size: 1.05rem;
+    color: var(--primary);
+    margin-top: 24px;
+  }
+  p, li { color: var(--text); }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  .placeholder {
+    background: #FFF3F3;
+    color: #8C3A3A;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+  }
+  a { color: var(--primary); }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0E1620; --surface: #16212D; --text: #E8E3D9; --text-secondary: #A3ADB8;
+      --primary: #E8E3D9; --accent: #C9A46A; --border: #2A3644;
+    }
+  }
+  .meta { color: var(--text-secondary); font-size: 0.9rem; }
+  .highlight { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 8px; padding: 16px 20px; }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Política de Privacidade — Finanças Fácil</h1>
+  <div class="subtitle">Aplicativo para Android · Desenvolvido por Cortexis Tech</div>
+  <div class="meta">Última atualização: 13 de outubro de 2026</div>
+</header>
+
+<p class="highlight"><strong>Resumo:</strong> o Finanças Fácil não tem servidor, não pede conta e não coleta dados. O app nem sequer tem permissão de acesso à internet. Seus dados ficam no seu aparelho, criptografados, e só saem dele quando você mesmo decide (backup ou exportação).</p>
+
+<h2>1. Quais dados o aplicativo trata</h2>
+<p>Somente o que você digita ou escolhe dentro do app:</p>
+<ul>
+  <li>contas, cartões de crédito, faturas e parcelamentos;</li>
+  <li>transações, categorias, orçamentos, metas e transações recorrentes;</li>
+  <li>cotações de moedas que você informa manualmente;</li>
+  <li>fotos de comprovantes que você anexa a uma transação;</li>
+  <li>extratos bancários (OFX ou CSV) que você escolhe importar.</li>
+</ul>
+<p>Esses dados ficam <strong>exclusivamente no aparelho</strong>, num banco de dados criptografado (SQLCipher, AES-256). As fotos de comprovantes também são guardadas criptografadas (AES-GCM), com chave protegida pelo Android Keystore.</p>
+
+<h2>2. Sem internet, sem servidores</h2>
+<p>O aplicativo não declara a permissão de acesso à internet do Android e não possui backend, API remota, login, analytics, anúncios ou SDKs de terceiros para coleta de dados. Nenhum dado é enviado ao desenvolvedor, que não tem acesso a nada que você registra.</p>
+
+<h2>3. PIN e biometria</h2>
+<p>O PIN é guardado apenas como um hash com sal (PBKDF2), protegido pelo Android Keystore, nunca em texto simples. Na biometria (impressão digital ou rosto), quem faz a verificação é o próprio Android. O app recebe só o resultado (sucesso ou falha), nunca o dado biométrico.</p>
+
+<h2>4. Câmera, galeria e arquivos</h2>
+<p>O app não pede permissão de câmera nem de acesso a todos os arquivos. Ao anexar um comprovante, ele usa o aplicativo de câmera ou o seletor de fotos do próprio Android, e só recebe a imagem que você escolheu. Na importação de extratos e na escolha da pasta de backup, também é o seletor de arquivos do sistema que dá acesso apenas ao que você seleciona. Tudo é processado no aparelho.</p>
+
+<h2>5. Notificações e alertas</h2>
+<p>Lembretes de contas recorrentes e alertas (orçamento perto do limite ou estourado, fatura vencendo, gastos fora do padrão, saldo previsto negativo) são gerados e exibidos localmente pelo Android. Não há servidor de notificações.</p>
+
+<h2>6. Backups</h2>
+<ul>
+  <li><strong>Backup manual e exportação (CSV, JSON, PDF):</strong> o arquivo é gerado quando você pede e entregue pelo menu de compartilhamento do Android. É você quem decide onde ele fica.</li>
+  <li><strong>Backup fora do aparelho (opcional, desligado por padrão):</strong> quando você ativa, o app gera uma vez por dia uma cópia completa <strong>criptografada com uma senha que só você conhece</strong>. A cópia pode ir para uma pasta que você escolhe (cartão SD, Downloads, pasta sincronizada) e/ou para o backup da sua conta Google no Android. Nesse caso, o armazenamento é feito pelo serviço de backup do Google, conforme as configurações do seu aparelho. Só essa cópia criptografada participa do backup do Android, e sem a sua senha o conteúdo não pode ser lido, nem pelo desenvolvedor, nem pelo Google.</li>
+</ul>
+
+<h2>7. Widget da tela inicial</h2>
+<p>Se você adicionar o widget, ele pode mostrar seu patrimônio e o resultado do mês na tela inicial. Você pode ocultar os valores em <em>Ajustes → Aparência → Mostrar valores no widget</em>.</p>
+
+<h2>8. Proteções de tela</h2>
+<p>Na versão publicada, o app bloqueia capturas de tela e esconde o conteúdo na lista de apps recentes, para que seus dados não fiquem expostos.</p>
+
+<h2>9. Seus direitos (LGPD)</h2>
+<p>Pela Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você tem direito a acesso, correção, eliminação e portabilidade dos seus dados. Como tudo fica no seu aparelho, você exerce esses direitos diretamente no app:</p>
+<ul>
+  <li><strong>Acesso e correção:</strong> pelas próprias telas do app.</li>
+  <li><strong>Eliminação:</strong> exclua registros a qualquer momento. Desinstalar o app apaga todos os dados do aparelho. Se o backup fora do aparelho estiver ativo, desative-o para remover a cópia do backup do Google no próximo envio; arquivos em pastas que você escolheu continuam lá até você apagá-los.</li>
+  <li><strong>Portabilidade:</strong> exporte em CSV, JSON ou backup completo.</li>
+</ul>
+
+<h2>10. Crianças e adolescentes</h2>
+<p>O aplicativo não é direcionado a menores de idade e não coleta dados de nenhum usuário.</p>
+
+<h2>11. Alterações nesta política</h2>
+<p>A data da última atualização fica no topo desta página. Mudanças relevantes serão informadas nas notas de versão do Google Play.</p>
+
+<h2>12. Contato</h2>
+<p>Dúvidas: <a href="mailto:cortexistech@gmail.com">cortexistech@gmail.com</a> · Cortexis Tech.</p>
+
+<footer>Finanças Fácil — controle financeiro pessoal. Desenvolvido por Cortexis Tech · <a href="mailto:cortexistech@gmail.com">cortexistech@gmail.com</a></footer>
+</div>
+</body>
+</html>
