@@ -104,24 +104,25 @@
 <header>
   <h1>Política de Privacidade — Finanças Fácil</h1>
   <div class="subtitle">Aplicativo para Android · Desenvolvido por Cortexis Tech</div>
-  <div class="meta">Última atualização: 13 de outubro de 2026</div>
+  <div class="meta">Última atualização: 16 de novembro de 2026</div>
 </header>
 
-<p class="highlight"><strong>Resumo:</strong> o Finanças Fácil não tem servidor, não pede conta e não coleta dados. O app nem sequer tem permissão de acesso à internet. Seus dados ficam no seu aparelho, criptografados, e só saem dele quando você mesmo decide (backup ou exportação).</p>
+<p class="highlight"><strong>Resumo:</strong> seus dados financeiros ficam no aparelho, criptografados, e só saem dele quando você decide compartilhá-los ou ativar o backup. Para consultar cotações de referência, o app acessa a API Frankfurter pela internet; essa conexão pode fornecer ao serviço informações técnicas, como o endereço IP.</p>
 
 <h2>1. Quais dados o aplicativo trata</h2>
-<p>Somente o que você digita ou escolhe dentro do app:</p>
+<p>O aplicativo trata os dados financeiros que você digita ou escolhe dentro do app, incluindo:</p>
 <ul>
   <li>contas, cartões de crédito, faturas e parcelamentos;</li>
   <li>transações, categorias, orçamentos, metas e transações recorrentes;</li>
-  <li>cotações de moedas que você informa manualmente;</li>
+  <li>cotações de moedas que você informa manualmente e cotações públicas de referência consultadas pela internet;</li>
   <li>fotos de comprovantes que você anexa a uma transação;</li>
   <li>extratos bancários (OFX ou CSV) que você escolhe importar.</li>
 </ul>
 <p>Esses dados ficam <strong>exclusivamente no aparelho</strong>, num banco de dados criptografado (SQLCipher, AES-256). As fotos de comprovantes também são guardadas criptografadas (AES-GCM), com chave protegida pelo Android Keystore.</p>
 
-<h2>2. Sem internet, sem servidores</h2>
-<p>O aplicativo não declara a permissão de acesso à internet do Android e não possui backend, API remota, login, analytics, anúncios ou SDKs de terceiros para coleta de dados. Nenhum dado é enviado ao desenvolvedor, que não tem acesso a nada que você registra.</p>
+<h2>2. Consulta de cotações pela internet</h2>
+<p>Ao abrir o app e quando você solicita uma atualização, o aplicativo consulta a API Frankfurter para obter taxas públicas de referência do Banco Central Europeu. A solicitação não inclui transações, contas, saldos ou outros registros financeiros. Como em qualquer conexão pela internet, o fornecedor do serviço pode receber dados técnicos da conexão, como o endereço IP. As taxas de USD, EUR e BRL são atualizadas para sugerir valores em transferências; as outras moedas continuam com taxas manuais. As últimas dez alterações por par ficam no banco local e nos backups, sem modificar transferências anteriores.</p>
+<p>O aplicativo não possui backend próprio, login, analytics ou anúncios. O desenvolvedor não recebe os dados financeiros registrados no aparelho pela consulta de cotações.</p>
 
 <h2>3. PIN e biometria</h2>
 <p>O PIN é guardado apenas como um hash com sal (PBKDF2), protegido pelo Android Keystore, nunca em texto simples. Na biometria (impressão digital ou rosto), quem faz a verificação é o próprio Android. O app recebe só o resultado (sucesso ou falha), nunca o dado biométrico.</p>
@@ -153,7 +154,7 @@
 </ul>
 
 <h2>10. Crianças e adolescentes</h2>
-<p>O aplicativo não é direcionado a menores de idade e não coleta dados de nenhum usuário.</p>
+<p>O aplicativo não é direcionado a menores de idade.</p>
 
 <h2>11. Alterações nesta política</h2>
 <p>A data da última atualização fica no topo desta página. Mudanças relevantes serão informadas nas notas de versão do Google Play.</p>
